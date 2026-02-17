@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="styles/style.css"/>
+  <title>Music</title>
+</head>
+<body>
+  <h1>
+    Music
+  </h1>
+  <nav class="nav">
+    <a href="home.html" >Home</a>
+    <a href="music.html" class="active">Music</a>
+    <a href="reel.html" >Reels</a>
+    
+  </nav>
+  <!-- SEARCH -->
+<div class="search-wrap">
+<input type="text" id="searchInput" class="search-bar"
+placeholder="Search songs..."
+onkeyup="searchSongs()">
+<div id="suggestions" class="suggestions"></div>
+</div>
+
+<!-- NO RESULTS -->
+<div id="noResults">No songs found</div>
+
+  
+    
+  <div class="M1">
+    <h3>Khanyi_SA's Songs</h3>
+    <!-- MUSIC SLIDER -->
+<div class="music-row" id="musicRow">
+
+<!-- SONG -->
+<div class="music-card" data-title="SHELELA">
+<h3 class="song-title">SHELELA</h3>
+<div class="cover-frame"
+     style="background-image:url('p5.jpg')">
+    <img src="p5.jpg" class="cover">
+</div>
+<audio controls class="player">
+<source src="SHELELA!!!(1).mp3">
+</audio>
+</div>
+
+<div class="music-card" data-title="LeKomTrap">
+<h3 class="song-title">LeKomTrap - Khanyi_SA</h3>
+<div class="cover-frame"
+     style="background-image:url('p3.jpg')">
+    <img src="p3.jpg" class="cover">
+</div>
+<audio controls class="player">
+<source src="LeKomTrap(1).mp3">
+</audio>
+</div>
+
+<div class="music-card" data-title="Street Code">
+<h3 class="song-title">Fuck Emm All - Khanyi_SA</h3>
+<div class="cover-frame"
+     style="background-image:url('p1.jpg')">
+    <img src="p1.jpg" class="cover">
+</div>
+<audio controls class="player">
+<source src="Fuck emm All.mp3">
+</audio>
+</div>
+
+<div class="music-card" data-title="Plata">
+<h3 class="song-title">Plata Freestyle - Khanyi_SA</h3>
+<div class="cover-frame"
+     style="background-image:url('p6.jpg')">
+    <img src="p6.jpg" class="cover">
+</div>
+<audio controls class="player">
+<source src="plata.mp3">
+</audio>
+</div>
+
+  <div class="music-card" data-title="2026">
+<h3 class="song-title">2026 - Khanyi_SA</h3>
+<div class="cover-frame"
+     style="background-image:url('p4.jpg')">
+    <img src="p4.jpg" class="cover">
+</div>
+<audio controls class="player">
+<source src="2026.mp3">
+</audio>
+</div>
+  
+</div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
