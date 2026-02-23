@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Music</h1>
+
+<nav>
+  <a href="home.html">Home</a>
+  <a href="music.html" class="active">Music</a>
+  <a href="reel.html">Reels</a>
+</nav>
+
+<div class="search-wrap">
+  <input type="text" id="searchInput" class="search-bar" placeholder="Search songs..." onkeyup="searchSongs()">
+  <div id="suggestions" class="suggestions"></div>
+</div>
+
+<div id="noResults">No songs found</div>
+
+<div class="M1">
+  <h3>Khanyi_SA's Songs</h3>
+  <div class="music-row">
+
+    <!-- SONG CARD 1 -->
+    <div class="music-card" data-title="SHELELA">
+      <h3 class="song-title">SHELELA</h3>
+      <div class="cover-frame" style="background-image:url('p5.jpg')">
+        <img src="p1.jpg" class="cover">
+        <div class="live-comments"></div>
+      </div>
+      
+     <audio controls class="player">
+        <source src="shelela.mp3">
+      </audio>
+      <div class="engagement">
+        <button class="like-btn">❤️ <span class="like-count">0</span></button>
+        <span class="play-count">▶ 0 plays</span>
+      </div>
+      <div class="comment-section">
+        <input type="text" class="comment-input" placeholder="Write a comment...">
+        <button class="comment-btn">Post</button>
+      </div>
+    </div>
+
+    <!-- SONG CARD 2 -->
+    <div class="music-card" data-title="LeKomTrap">
+      <h3 class="song-title">LeKomTrap - Khanyi_SA</h3>
+      <div class="cover-frame" style="background-image:url('p3.jpg')">
+        <img src="p2.jpg" class="cover">
+        <div class="live-comments"></div>
+      </div>
+      <audio controls class="player">
+        <source src="lekomtrap.mp3">
+      </audio>
+      <div class="engagement">
+        <button class="like-btn">❤️ <span class="like-count">0</span></button>
+        <span class="play-count">▶ 0 plays</span>
+      </div>
+      <div class="comment-section">
+        <input type="text" class="comment-input" placeholder="Write a comment...">
+        <button class="comment-btn">Post</button>
+      </div>
+    </div>
+
+    <!-- SONG CARD 3 -->
+    <div class="music-card" data-title="Street Code">
+      <h3 class="song-title">Fuck Emm All - Khanyi_SA</h3>
+      <div class="cover-frame" style="background-image:url('p1.jpg')">
+        <img src="p3.jpg" class="cover">
+        <div class="live-comments"></div>
+      </div>
+      <audio controls class="player">
+        <source src="fuck-emm-all.mp3">
+      </audio>
+      <div class="engagement">
+        <button class="like-btn">❤️ <span class="like-count">0</span></button>
+        <span class="play-count">▶ 0 plays</span>
+      </div>
+      <div class="comment-section">
+        <input type="text" class="comment-input" placeholder="Write a comment...">
+        <button class="comment-btn">Post</button>
+      </div>
+    </div>
+    
+      <!-- SONG CARD 3 -->
+    <div class="music-card" data-title="Street Code">
+      <h3 class="song-title">BEAST-MODE</h3>
+      <div class="cover-frame" style="background-image:url('p1.jpg')">
+        <img src="p4.jpg" class="cover">
+        <div class="live-comments"></div>
+      </div>
+      <audio controls class="player">
+        <source src="beast-mode.mp3">
+      </audio>
+      <div class="engagement">
+        <button class="like-btn">❤️ <span class="like-count">0</span></button>
+        <span class="play-count">▶ 0 plays</span>
+      </div>
+      <div class="comment-section">
+        <input type="text" class="comment-input" placeholder="Write a comment...">
+        <button class="comment-btn">Post</button>
+      </div>
+    </div>
+    
+      <!-- SONG CARD 3 -->
+    <div class="music-card" data-title="Street Code">
+      <h3 class="song-title">Ehh</h3>
+      <div class="cover-frame" style="background-image:url('p1.jpg')">
+        <img src="p5.jpg" class="cover">
+        <div class="live-comments"></div>
+      </div>
+      <audio controls class="player">
+        <source src="ehh.mp3">
+      </audio>
+      <div class="engagement">
+        <button class="like-btn">❤️ <span class="like-count">0</span></button>
+        <span class="play-count">▶ 0 plays</span>
+      </div>
+      <div class="comment-section">
+        <input type="text" class="comment-input" placeholder="Write a comment...">
+        <button class="comment-btn">Post</button>
+      </div>
+    </div>
+    
+      <!-- SONG CARD 3 -->
+    <div class="music-card" data-title="Street Code">
+      <h3 class="song-title">Hleee</h3>
+      <div class="cover-frame" style="background-image:url('p1.jpg')">
+        <img src="p6.jpg" class="cover">
+        <div class="live-comments"></div>
+      </div>
+      <audio controls class="player">
+        <source src="hleee.mp3">
+      </audio>
+      <div class="engagement">
+        <button class="like-btn">❤️ <span class="like-count">0</span></button>
+        <span class="play-count">▶ 0 plays</span>
+      </div>
+      <div class="comment-section">
+        <input type="text" class="comment-input" placeholder="Write a comment...">
+        <button class="comment-btn">Post</button>
+      </div>
+    </div>
+    
+      <!-- SONG CARD 3 -->
+    <div class="music-card" data-title="Street Code">
+      <h3 class="song-title">Let's Go</h3>
+      <div class="cover-frame" style="background-image:url('p1.jpg')">
+        <img src="p7.jpg" class="cover">
+        <div class="live-comments"></div>
+      </div>
+      <audio controls class="player">
+        <source src="let's-go.mp3">
+      </audio>
+      <div class="engagement">
+        <button class="like-btn">❤️ <span class="like-count">0</span></button>
+        <span class="play-count">▶ 0 plays</span>
+      </div>
+      <div class="comment-section">
+        <input type="text" class="comment-input" placeholder="Write a comment...">
+        <button class="comment-btn">Post</button>
+      </div>
+    </div>
+    
+      <!-- SONG CARD 3 -->
+    <div class="music-card" data-title="Street Code">
+      <h3 class="song-title">OMG</h3>
+      <div class="cover-frame" style="background-image:url('p1.jpg')">
+        <img src="p8.jpg" class="cover">
+        <div class="live-comments"></div>
+      </div>
+      <audio controls class="player">
+        <source src="omg.mp3">
+      </audio>
+      <div class="engagement">
+        <button class="like-btn">❤️ <span class="like-count">0</span></button>
+        <span class="play-count">▶ 0 plays</span>
+      </div>
+      <div class="comment-section">
+        <input type="text" class="comment-input" placeholder="Write a comment...">
+        <button class="comment-btn">Post</button>
+      </div>
+    </div>
+
+      <!-- SONG CARD 3 -->
+    <div class="music-card" data-title="Street Code">
+      <h3 class="song-title">Optimistic Niggar</h3>
+      <div class="cover-frame" style="background-image:url('p1.jpg')">
+        <img src="p9.jpg" class="cover">
+        <div class="live-comments"></div>
+      </div>
+      <audio controls class="player">
+        <source src="optimistic.mp3">
+      </audio>
+      <div class="engagement">
+        <button class="like-btn">❤️ <span class="like-count">0</span></button>
+        <span class="play-count">▶ 0 plays</span>
+      </div>
+      <div class="comment-section">
+        <input type="text" class="comment-input" placeholder="Write a comment...">
+        <button class="comment-btn">Post</button>
+      </div>
+    </div>
+    
+      <!-- SONG CARD 3 -->
+    <div class="music-card" data-title="Street Code">
+      <h3 class="song-title">Warebora</h3>
+      <div class="cover-frame" style="background-image:url('p1.jpg')">
+        <img src="p10.jpg" class="cover">
+        <div class="live-comments"></div>
+      </div>
+      <audio controls class="player">
+        <source src="warebora.mp3">
+      </audio>
+      <div class="engagement">
+        <button class="like-btn">❤️ <span class="like-count">0</span></button>
+        <span class="play-count">▶ 0 plays</span>
+      </div>
+      <div class="comment-section">
+        <input type="text" class="comment-input" placeholder="Write a comment...">
+        <button class="comment-btn">Post</button>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

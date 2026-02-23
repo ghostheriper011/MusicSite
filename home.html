@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="style.css"/>
+  <title>Home</title>
+</head>
+<body>
+  <h1>
+    Home
+  </h1>
+  <nav class="nav">
+    <a href="home.html" class="active">Home</a>
+    <a href="music.html" >Music</a>
+    <a href="reel.html" >Reels</a>
+    
+  </nav>
+<!-- HERO -->
+<section class="hero">
+<h1>Feel the Beat</h1>
+<p>Discover the hottest tracks and watch short music clips like never before.</p>
+<a href="music.html" class="btn">Explore Music</a>
+<a href="#reels" class="btn btn-secondary">Watch Reels</a>
+</section>
+
+<!-- MUSIC ROW -->
+<h2 class="section-title">Featured Music</h2>
+<div class="row" id="musicRow">
+<div class="music-card" onclick="window.location.href='music.html#song1'">
+<img src="p1.jpg" alt="Ghost Fire">
+</div>
+<div class="music-card" onclick="window.location.href='music.html#song2'">
+<img src="p5.jpg" alt="Night Drive">
+</div>
+<div class="music-card" onclick="window.location.href='music.html#song3'">
+<img src="p3.jpg" alt="Street Code">
+</div>
+<div class="music-card" onclick="window.location.href='music.html#song4'">
+<img src="p4.jpg" alt="Fire Mode">
+</div>
+</div>
+
+<!-- REELS ROW -->
+<h2 class="section-title" id="reels">Reels</h2>
+<div class="row" id="reelRow">
+<div class="reel-card">
+<video src="v1.mp4"  loop playsinline></video>
+</div>
+<div class="reel-card">
+<video src="v3.mp4" loop playsinline></video>
+</div>
+<div class="reel-card">
+<video src="v5.mp4"  loop playsinline></video>
+</div>
+<div class="reel-card">
+<video src="v8.mp4" loop playsinline></video>
+</div>
+</div>
+
+<footer>
+  <p>&copy; 2026 My Music Site</p>
+  <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+  <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+</footer>
+
+<script>
+// Autoplay reel videos on hover
+document.querySelectorAll('.reel-card video').forEach(video => {
+    video.addEventListener('mouseenter', () => video.play());
+    video.addEventListener('mouseleave', () => video.pause());
+});
+</script>
+</body>
+</html>
